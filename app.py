@@ -68,6 +68,8 @@ def load_model():
     """Load the trained model and metadata."""
     model_path = "models/whale_prediction_model.pkl"
     metadata_path = "models/model_metadata.json"
+
+    return jo
     
     if not os.path.exists(model_path):
         st.error(f"Model file not found at {model_path}")
@@ -75,7 +77,7 @@ def load_model():
         return None, None
     
     try:
-        model = joblib.load(model_path)
+        model = joblib.load("models/whale_prediction_model.pk1")
         
         with open(metadata_path, 'r') as f:
             metadata = json.load(f)
