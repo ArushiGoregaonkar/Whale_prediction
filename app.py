@@ -70,7 +70,7 @@ def load_model():
     metadata_path = "models/model_metadata.json"
 
     @st.cache_resource
-return joblib.load("models/whale_prediction_model.pk1")
+    return joblib.load("models/whale_prediction_model.pk1")
     
     if not os.path.exists(model_path):
         st.error(f"Model file not found at {model_path}")
