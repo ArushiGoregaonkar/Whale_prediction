@@ -70,9 +70,6 @@ def load_model():
     metadata_path = "models/model_metadata.json"
 
     @st.cache_resource
-
-def load model():
-
 return joblib.load("models/whale_prediction_model.pk1")
     
     if not os.path.exists(model_path):
