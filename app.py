@@ -69,7 +69,11 @@ def load_model():
     model_path = "models/whale_prediction_model.pkl"
     metadata_path = "models/model_metadata.json"
 
-    return jo
+    @st.cache_resource
+
+def load model():
+
+return joblib.load("models/whale_prediction_model.pk1")
     
     if not os.path.exists(model_path):
         st.error(f"Model file not found at {model_path}")
